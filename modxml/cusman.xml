@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<app				 name="cusman" label="客户" version="1.0"
+		tablename="t_cus"  
+		allownew="true"
+		allowedit="true"
+		allowdelete="true"
+>
+<sql>
+drop table t_cus;
+create table  t_cus (
+	aid int  null ,
+	age int null  ,
+	height int null  ,
+	birth varchar(30) null 
+)
+</sql>
+<fileds>
+  	<filed  name="title" label="姓名" col="ss1" juiclass="easyui-textbox"  juidataop=""   edithide="true"  list="true" />
+	<filed  name="age" label="年龄" col="ss2" juiclass="easyui-numberspinner"  juidataop="min:1,max:90,editable:false"  edithide="true" />
+	<filed  name="height" label="身高" col="ss3" juiclass="easyui-numberbox"  juidataop="" list="true" />
+	<filed  name="birth" label="出生" col="ss1" juiclass="bdedit" list="true"    />
+ 
+</fileds>
+</app>
+
